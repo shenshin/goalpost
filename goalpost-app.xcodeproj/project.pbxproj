@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783315EC1F70C84F00BEC048 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783315EB1F70C84F00BEC048 /* GoalType.swift */; };
 		78C21B0F1F4E6EE1006722D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C21B0E1F4E6EE1006722D4 /* AppDelegate.swift */; };
 		78C21B111F4E6EE1006722D4 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C21B101F4E6EE1006722D4 /* GoalsVC.swift */; };
 		78C21B141F4E6EE1006722D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C21B121F4E6EE1006722D4 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		783315EB1F70C84F00BEC048 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoalType.swift; path = ../../../GoalType.swift; sourceTree = "<group>"; };
 		78C21B0B1F4E6EE1006722D4 /* goalpost-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goalpost-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C21B0E1F4E6EE1006722D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78C21B101F4E6EE1006722D4 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		78C21B241F4E6F6A006722D4 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				783315EB1F70C84F00BEC048 /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				882066D61F56D60800EB8D31 /* GoalCell.swift in Sources */,
+				783315EC1F70C84F00BEC048 /* GoalType.swift in Sources */,
 				78C21B111F4E6EE1006722D4 /* GoalsVC.swift in Sources */,
 				78C21B0F1F4E6EE1006722D4 /* AppDelegate.swift in Sources */,
 				78C21B171F4E6EE1006722D4 /* goalpost_app.xcdatamodeld in Sources */,
