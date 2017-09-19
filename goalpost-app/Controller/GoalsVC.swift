@@ -52,7 +52,7 @@ extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "goalCell") as? GoalCell else {return UITableViewCell()}
-        cell.configureCell(description: "Кушай салат 2 раза в неделю", type: "Short Term", goalProgressAmount: 2)
+        cell.configureCell(description: "Кушай салат 2 раза в неделю", type: .shortTerm, goalProgressAmount: 2)
         return cell
     }
 }
