@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -185,6 +185,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="34.239130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cOw-UQ-6rk">
+            <objects>
+                <viewController id="Xb4-8P-hwv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gHa-bY-V06">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51R-Wm-rT5">
+                                <rect key="frame" x="0.0" y="20" width="414" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rf-u3-oAn" userLabel="GOALPOST">
+                                        <rect key="frame" x="158" y="35.333333333333343" width="99" height="24.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXq-js-Eaq">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="24.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koh-SR-vR8">
+                                                <rect key="frame" x="51" y="0.0" width="48" height="24.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcu-Fy-eHx">
+                                        <rect key="frame" x="356" y="28" width="35" height="32"/>
+                                        <state key="normal" image="addGoal"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Qcu-Fy-eHx" secondAttribute="trailing" constant="23" id="9E9-W4-v5T"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qcu-Fy-eHx" secondAttribute="bottom" constant="10" id="Mme-2a-gUx"/>
+                                    <constraint firstAttribute="bottom" secondItem="1rf-u3-oAn" secondAttribute="bottom" constant="10" id="TCN-JE-nNc"/>
+                                    <constraint firstItem="1rf-u3-oAn" firstAttribute="centerX" secondItem="51R-Wm-rT5" secondAttribute="centerX" id="TaU-aV-XTo"/>
+                                    <constraint firstAttribute="height" constant="70" id="YY0-gB-MaC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="51R-Wm-rT5" firstAttribute="trailing" secondItem="zY7-92-9he" secondAttribute="trailing" id="3kP-Er-wvJ"/>
+                            <constraint firstItem="51R-Wm-rT5" firstAttribute="top" secondItem="zY7-92-9he" secondAttribute="top" id="bkm-nE-6wJ"/>
+                            <constraint firstItem="51R-Wm-rT5" firstAttribute="leading" secondItem="zY7-92-9he" secondAttribute="leading" id="chv-VV-5mw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zY7-92-9he"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qd-GJ-po4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="35"/>
         </scene>
     </scenes>
     <resources>
