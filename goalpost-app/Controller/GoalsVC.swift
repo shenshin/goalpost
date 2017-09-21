@@ -17,8 +17,8 @@ class GoalsVC: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.isHidden = true
-        self.welcomeMessage.isHidden = false
+        self.tableView.isHidden = false
+        self.welcomeMessage.isHidden = true
         tableView.delegate = self
         tableView.dataSource = self
       
