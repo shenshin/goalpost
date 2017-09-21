@@ -15,6 +15,7 @@
 		78C21B191F4E6EE1006722D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C21B181F4E6EE1006722D4 /* Assets.xcassets */; };
 		78C21B1C1F4E6EE1006722D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C21B1A1F4E6EE1006722D4 /* LaunchScreen.storyboard */; };
 		78D35F571F72CA5600B2B9F0 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D35F561F72CA5600B2B9F0 /* CreateGoalVC.swift */; };
+		78D35F591F73427600B2B9F0 /* UIViewCotrollerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D35F581F73427600B2B9F0 /* UIViewCotrollerExt.swift */; };
 		882066D61F56D60800EB8D31 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882066D51F56D60800EB8D31 /* GoalCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		78C21B1B1F4E6EE1006722D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78C21B1D1F4E6EE1006722D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D35F561F72CA5600B2B9F0 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		78D35F581F73427600B2B9F0 /* UIViewCotrollerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewCotrollerExt.swift; sourceTree = "<group>"; };
 		882066D51F56D60800EB8D31 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +56,7 @@
 		783315EE1F70CA1400BEC048 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				78D35F581F73427600B2B9F0 /* UIViewCotrollerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				78C21B111F4E6EE1006722D4 /* GoalsVC.swift in Sources */,
 				78C21B0F1F4E6EE1006722D4 /* AppDelegate.swift in Sources */,
 				78C21B171F4E6EE1006722D4 /* goalpost_app.xcdatamodeld in Sources */,
+				78D35F591F73427600B2B9F0 /* UIViewCotrollerExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
