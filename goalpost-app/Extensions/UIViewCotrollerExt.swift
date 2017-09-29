@@ -27,7 +27,5 @@ extension UIViewController {
         dismiss(animated: false, completion: nil)
     }
     
-    func helloWorld() -> String {
-        return "Hello World!"
-    }
+
 }
