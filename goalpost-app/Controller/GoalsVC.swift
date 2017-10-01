@@ -25,18 +25,10 @@ class GoalsVC: UIViewController  {
     }
 
     @IBAction func addGoalBtnWasPressed(_ sender: UIButton) {
-        if self.tableView != nil, self.welcomeMessage != nil {
-            if self.tableView.isHidden { //если таблица спрятана,
-                self.tableView.isHidden = false //показать таблицу
-                self.welcomeMessage.isHidden = true //убрать приветствие
-            } else { //если таблица показана
-                self.tableView.isHidden = true //убрать таблицу
-                self.welcomeMessage.isHidden = false //показать приветствие
-            }
-        }
+        guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "CreateGoalVC") else {return}
+        presentDetail(createGoalVC)
     }
 }
-
 //MARK: tableView инициализация
 //  забавный способ разделения класса на части, отвечающие за различные функции -  это создание расширения для класса с включением необходимой функции
 /*  Для работы TableView необходимо, чтобы класс соответствовал двум протоколам (UITableViewDelegate, UITableViewDataSource) и реализовывал как минимум три метода из этих протоколов (numberOfSections, numberOfRowsInSection, cellForRowAt indexPath), а также не забыть указать делегат и источник данных (tableView.delegate = self,  tableView.dataSource = self). Последнее делается в методе viewDidLoad()  */

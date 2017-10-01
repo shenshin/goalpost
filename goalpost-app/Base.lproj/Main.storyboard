@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -53,6 +53,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJ0-t0-xf6">
                                         <rect key="frame" x="317" y="28" width="35" height="32"/>
                                         <state key="normal" image="addGoal"/>
+                                        <connections>
+                                            <action selector="addGoalBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qb9-3I-kP8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -321,6 +324,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qd-GJ-po4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="762.39999999999998" y="33.733133433283363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hTs-gT-eYH">
+            <objects>
+                <viewController id="lYc-9j-z9f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="an8-Pm-fc2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etJ-cC-mOy">
+                                <rect key="frame" x="0.0" y="20" width="375" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhW-wV-jyL" userLabel="GOALPOST">
+                                        <rect key="frame" x="138.5" y="35" width="99" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owe-gW-Y7t">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="25"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsX-v9-1uZ">
+                                                <rect key="frame" x="51" y="0.0" width="48" height="25"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="for-Hg-u2v">
+                                        <rect key="frame" x="27" y="31" width="14" height="25"/>
+                                        <state key="normal" image="back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EhW-wV-jyL" firstAttribute="centerX" secondItem="etJ-cC-mOy" secondAttribute="centerX" id="0u8-NX-0Kt"/>
+                                    <constraint firstAttribute="height" constant="70" id="BPh-sy-0zl"/>
+                                    <constraint firstAttribute="bottom" secondItem="EhW-wV-jyL" secondAttribute="bottom" constant="10" id="QGt-bt-6O7"/>
+                                    <constraint firstItem="for-Hg-u2v" firstAttribute="leading" secondItem="etJ-cC-mOy" secondAttribute="leading" constant="27" id="XfA-Em-UAR"/>
+                                    <constraint firstAttribute="bottom" secondItem="for-Hg-u2v" secondAttribute="bottom" constant="14" id="Zsb-5j-WOO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many points untill comlpletes?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYG-bw-PXZ">
+                                <rect key="frame" x="20" y="110" width="335" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="tcM-47-CTX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxR-OJ-fiM">
+                                <rect key="frame" x="159.5" y="145" width="56" height="78"/>
+                                <color key="textColor" red="0.55510216951370239" green="0.7649959921836853" blue="0.4939810037612915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="54"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FYG-bw-PXZ" firstAttribute="top" secondItem="etJ-cC-mOy" secondAttribute="bottom" constant="20" id="BlP-tv-94z"/>
+                            <constraint firstItem="yxR-OJ-fiM" firstAttribute="top" secondItem="FYG-bw-PXZ" secondAttribute="bottom" constant="10" id="Dt2-Ra-1tg"/>
+                            <constraint firstItem="etJ-cC-mOy" firstAttribute="leading" secondItem="B7b-cd-Y4j" secondAttribute="leading" id="RUe-Zl-2za"/>
+                            <constraint firstItem="etJ-cC-mOy" firstAttribute="top" secondItem="B7b-cd-Y4j" secondAttribute="top" id="Sep-gu-QU4"/>
+                            <constraint firstItem="etJ-cC-mOy" firstAttribute="trailing" secondItem="B7b-cd-Y4j" secondAttribute="trailing" id="inE-uO-D8f"/>
+                            <constraint firstItem="B7b-cd-Y4j" firstAttribute="trailing" secondItem="FYG-bw-PXZ" secondAttribute="trailing" constant="20" id="oD6-Ot-RwU"/>
+                            <constraint firstItem="FYG-bw-PXZ" firstAttribute="leading" secondItem="B7b-cd-Y4j" secondAttribute="leading" constant="20" id="pqE-9L-UUZ"/>
+                            <constraint firstItem="yxR-OJ-fiM" firstAttribute="centerX" secondItem="an8-Pm-fc2" secondAttribute="centerX" id="sN2-2q-kOF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B7b-cd-Y4j"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCV-Fi-1x4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496.8" y="32.833583208395808"/>
         </scene>
     </scenes>
     <resources>
